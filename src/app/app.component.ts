@@ -30,7 +30,9 @@ export class AppComponent {
   constructor(private appService: AppService) {}
 
   ngOnInit() {
-    this.appService.getData().subscribe(carsData => this.carsData = carsData);
+    this.appService
+      .getData()
+      .subscribe((carsData) => (this.carsData = carsData));
   }
 
   goScroll(target: HTMLElement, car?: any) {
