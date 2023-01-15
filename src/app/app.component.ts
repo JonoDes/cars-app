@@ -32,7 +32,7 @@ export class AppComponent {
   ngOnInit() {
     this.appService
       .getData()
-      .subscribe((carsData) => (this.carsData = carsData));
+      .subscribe(carsData => (this.carsData = carsData));
   }
 
   goScroll(target: HTMLElement, car?: any) {
@@ -70,7 +70,7 @@ export class AppComponent {
         },
         error: (response) => {
           alert(response.error.message);
-        },
+        }
       });
     }
   }
