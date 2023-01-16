@@ -45,7 +45,7 @@
 }
 
 .main {
-  background-image: url(/assets/img/background.png);
+  background-image: url(assets/img/background.png);
   background-position: center;
   background-size: cover;
   padding: 104px 0 285.82px;
