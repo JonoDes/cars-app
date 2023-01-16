@@ -45,7 +45,6 @@
 }
 
 .main {
-  background-image: url(/src/assets/img/background.png);
   background-position: center;
   background-size: cover;
   padding: 104px 0 285.82px;
@@ -239,4 +238,36 @@
 }
 .price-input.ng-touched.ng-invalid {
   border: 2px solid red;
+}
+
+.car-toggle {
+  display: flex;
+  width: 194px;
+  border: 1px solid gray;
+  margin: 20px 0;
+}
+
+.car-toggle div {
+  padding: 20px;
+  background: white;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: black;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+.car-toggle div.active {
+  background: #030305;
+  color: #ffffff;
+}
+
+.car .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
